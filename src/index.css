@@ -1,0 +1,58 @@
+:root {
+  font-family: "SF Pro Text", "SF Pro Display", Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", Arial, sans-serif;
+  color: #f5f5f7;
+  background: #050506;
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  background: #050506;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% -15%, rgba(63, 105, 215, 0.2) 0, transparent 38rem),
+    radial-gradient(circle at 85% 42%, rgba(63, 48, 121, 0.11) 0, transparent 32rem),
+    linear-gradient(145deg, #050505 0%, #080b14 48%, #0b1020 76%, #050506 100%);
+  background-attachment: fixed;
+}
+
+body::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  opacity: 0.5;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(45, 94, 168, 0.09), transparent 28rem),
+    radial-gradient(ellipse at 75% 75%, rgba(83, 53, 138, 0.07), transparent 32rem);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  color: #fff;
+  background: rgba(41, 151, 255, 0.45);
+}
